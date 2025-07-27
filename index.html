@@ -3,174 +3,91 @@
 <head>
   <meta charset="UTF-8">
   <title>Yash Raj Jain | Personal Website</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Personal website of Yash Raj Jain: Electronic Trading Strategist at Morgan Stanley, Computer Science & Economics, Birla Institute of Technology and Science, Pilani.">
-  <link href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS for styling -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
   <style>
+    /* Custom styles for the font and a clean background */
     body {
-      margin: 0;
-      padding: 0;
-      background: #f7f7f8;
-      font-family: 'Inter', Arial, sans-serif;
-      color: #232c33;
-      font-size: 15px;
-      line-height: 1.7;
-      min-height: 100vh;
-    }
-    .main {
-      max-width: 560px;
-      margin: 54px auto 0 auto;
-      padding: 0 18px 70px 18px;
-    }
-    .profile-img {
-      display: block;
-      width: 110px;
-      height: 110px;
-      object-fit: cover;
-      border-radius: 50%;
-      margin: 0 auto 24px auto;
-      border: 2px solid #eaeaea;
-      background: #eee;
-      box-shadow: 0 2px 16px rgba(0,0,0,0.09);
-    }
-    h1 {
-      font-size: 1.6rem;
-      font-weight: 700;
-      letter-spacing: 0.01em;
-      text-align: center;
-      margin-bottom: 0.1em;
-      margin-top: 0;
-      color: #194979;
-    }
-    .role-subtitle {
-      text-align: center;
-      font-size: 1.02rem;
-      color: #194979;
-      font-weight: 600;
-      margin-bottom: 0.9em;
-    }
-    .degree {
-      text-align: center;
-      font-size: 1.04rem;
-      color: #4b5d6b;
-      font-weight: 500;
-      margin-bottom: 0.8em;
-    }
-    .links {
-      display: flex;
-      justify-content: center;
-      gap: 1.2em;
-      margin-bottom: 2.3em;
-      font-size: 0.93rem;
-      flex-wrap: wrap;
-    }
-    .links a {
-      color: #194979;
-      text-decoration: none;
-      font-weight: 500;
-      border-bottom: 1px dotted #194979;
-      transition: color 0.19s, border-color 0.19s;
-      letter-spacing: 0.01em;
-      padding-bottom: 1px;
-    }
-    .links a:hover {
-      color: #0055a5;
-      border-color: #0055a5;
-    }
-    .section {
-      margin-bottom: 2em;
-    }
-    .section-title {
-      font-size: 1.08rem;
-      color: #194979;
-      font-weight: 700;
-      margin-bottom: 0.6em;
-      letter-spacing: 0.01em;
-    }
-    .role-title {
-      font-size: 1rem;
-      font-weight: 600;
-      margin-bottom: 0.2em;
-      color: #232c33;
-      display: inline-block;
-      padding-right: 8px;
-    }
-    .role-place {
-      font-size: 0.98rem;
-      color: #194979;
-      font-weight: 600;
-      display: inline-block;
-      margin-bottom: 0.5em;
-      margin-left: 6px;
-    }
-    .role-desc {
-      font-size: 0.99rem;
-      color: #37475a;
-      margin-bottom: 0.3em;
-    }
-    @media (max-width: 600px) {
-      .main {
-        max-width: 99vw;
-        padding: 0 6px 40px 6px;
-      }
-      .profile-img {
-        width: 78px;
-        height: 78px;
-      }
-      h1 {
-        font-size: 1.08rem;
-      }
-      .role-subtitle {
-        font-size: 0.98rem;
-      }
-      .degree {
-        font-size: 0.95rem;
-      }
-      .section-title {
-        font-size: 1rem;
-      }
-      .links {
-        font-size: 0.88rem;
-        gap: 1em;
-      }
+      font-family: 'Inter', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      background-color: #ffffff;
     }
   </style>
 </head>
-<body>
-  <div class="main">
-    <img src="profile.jpg" alt="Yash Raj Jain Profile Photo" class="profile-img">
-    <h1>Yash Raj Jain</h1>
-    <div class="role-subtitle">Electronic Trading Strategist (Morgan Stanley)</div>
+<body class="text-slate-700">
 
-    <div class="degree">
-      B.E. Computer Science &mdash; M.Sc. Economics<br>
-      Birla Institute of Technology and Science, Pilani
+  <!-- Main container -->
+  <div class="main-container max-w-4xl mx-auto px-6 sm:px-8 lg:px-10 py-16 sm:py-24">
+    
+    <!-- Header Section -->
+    <header class="flex flex-col md:flex-row items-center gap-6 md:gap-8 mb-12">
+      <img 
+        src="profile.jpg" 
+        alt="Yash Raj Jain Profile Photo" 
+        class="w-24 h-24 md:w-28 md:h-28 rounded-full shadow-md flex-shrink-0"
+        onerror="this.onerror=null;this.src='https://placehold.co/112x112/1E293B/FFFFFF?text=YJ';"
+      >
+      <div class="text-center md:text-left">
+        <h1 class="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">Yash Raj Jain</h1>
+        <p class="text-lg sm:text-xl font-medium text-slate-600 mt-1">Electronic Trading Strategist, Morgan Stanley</p>
+        <div class="mt-2 text-sm sm:text-base text-slate-500">
+          <p>B.E. Computer Science &mdash; M.Sc. Economics</p>
+          <p>Birla Institute of Technology and Science, Pilani</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Links & Divider -->
+    <div class="flex justify-center md:justify-start items-center gap-5 mb-12 border-t border-b border-slate-200 py-4">
+      <a href="https://www.linkedin.com/in/yash-raj-jain/" target="_blank" rel="noopener" class="text-slate-600 hover:text-blue-600 font-medium transition-colors duration-300">
+        LinkedIn
+      </a>
+      <div class="h-4 border-l border-slate-300"></div>
+      <a href="https://scholar.google.com/citations?user=brti6MAAAAAJ&hl=en" target="_blank" rel="noopener" class="text-slate-600 hover:text-blue-600 font-medium transition-colors duration-300">
+        Google Scholar
+      </a>
     </div>
-    <div class="links">
-      <a href="https://www.linkedin.com/in/yash-raj-jain/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://scholar.google.com/citations?user=brti6MAAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+
+    <!-- Main Content Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
+      
+      <!-- Current Role Section -->
+      <div class="section space-y-3">
+        <h2 class="text-lg font-semibold text-slate-800 border-b border-slate-200 pb-2 mb-3">Current Role</h2>
+        <div>
+          <h3 class="font-semibold text-md text-slate-900">Electronic Trading (FX)</h3>
+          <p class="font-medium text-slate-500 text-sm">Morgan Stanley</p>
+        </div>
+        <p class="text-base leading-relaxed text-slate-600">
+          I work on the FX electronic trading desk, where I research trading dynamics to develop strategies for alpha generation and client flow internalization. My work blends quantitative analysis with technology to improve how we price, hedge, and trade in a fast-paced market.
+        </p>
+      </div>
+      
+      <!-- Previous Research Section -->
+      <div class="section space-y-3">
+        <h2 class="text-lg font-semibold text-slate-800 border-b border-slate-200 pb-2 mb-3">Previous Research</h2>
+        <div>
+          <h3 class="font-semibold text-md text-slate-900">Researcher, Metacognitive Reinforcement Learning</h3>
+          <p class="font-medium text-slate-500 text-sm">Max Planck Institute for Intelligent Systems</p>
+        </div>
+        <p class="text-base leading-relaxed text-slate-600">
+          At the Max Planck Institute, I conducted experimental research to understand how people make decisions and how learning processes adapt over time. My work involved designing and running behavioral experiments and analyzing how individuals use metacognitive reinforcement learning strategies to optimize their choices. I studied the mechanisms by which people assess and update their own learning and confidence, integrating insights from cognitive science and machine learning.
+        </p>
+      </div>
+
     </div>
+        
+  </div>
 
-    <div class="section">
-  <div class="section-title">Current Role</div>
-  <div>
-    <span class="role-title" style="display:block;">Electronic Trading (FX)</span>
-    <span class="role-place" style="display:block;">Morgan Stanley</span>
-  </div>
-  <div class="role-desc">
-    I work on the FX electronic trading desk, where I research trading dynamics to develop strategies for alpha generation and client flow internalization. My work blends quantitative analysis with technology to improve how we price, hedge, and trade in a fast-paced market.
-</div>
-
-<div class="section">
-  <div class="section-title">Previous Research</div>
-  <div>
-    <span class="role-title" style="display:block;">Researcher, Metacognitive Reinforcement Learning</span>
-    <span class="role-place" style="display:block;">Max Planck Institute for Intelligent Systems</span>
-  </div>
-  <div class="role-desc">
-    At the Max Planck Institute, I conducted experimental research to understand how people make decisions and how learning processes adapt over time. My work involved designing and running behavioral experiments and analyzing how individuals use metacognitive reinforcement learning strategies to optimize their choices. I studied the mechanisms by which people assess and update their own learning and confidence, integrating insights from cognitive science and machine learning.
-  </div>
-</div>
-  </div>
 </body>
 </html>
